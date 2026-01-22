@@ -81,19 +81,33 @@ section h3 {
 }
 
 .participants-list {
-  margin: 8px 0 0 20px;
+  margin: 8px 0 0 0;
   padding: 0;
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 .participants-list li {
   padding: 4px 0;
   color: #555;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.participants-list li::marker {
-  color: #1a237e;
+.delete-btn {
+  background: none;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee;
 }
 
 .no-participants {
